@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.warpper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: rgba(216, 174, 135, 0.349);
+    height: 70rem;
+    display: grid;
+    gap: 0.3rem 0.3rem;
+    grid-template-rows: 5rem 1fr 1fr;
+    grid-template-columns: 20% 1fr;
+
+}
+
+.box1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    padding-top: 1.3rem;
+}
+
+.box1 hr {
+    width: 10%;
+    position: relative;
+    transform: translateX(30.1rem);
+}
+
+.box2 {
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.box2 a {
+    text-decoration: none;
+    font-size: large;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 3px 3px gray;
+    background-color: rgba(13, 105, 74, 0.589);
+    
+}
+.box2 a:hover{
+    transform: scale(103%);
+    transition: 0.3s;
+    box-shadow: 4px 8px 8px gray;
+}
+
+.box3 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.box3 .nested_box1 {
+    background-color: aliceblue;
+    border-radius: 2rem;
+    box-shadow: 0px 3px 3px gray;
+    padding: 2rem;
+}
+
+.box3 .nested_box2 {
+    background-color: rgb(197, 49, 93);
+    border-radius: 2rem;
+    box-shadow: 0px 3px 3px gray;
+    padding: 2rem;
+}
+
+.box3 .nested_box3 {
+    background-color: rgb(197, 49, 93);
+    border-radius: 2rem;
+    box-shadow: 0px 3px 3px gray;
+    padding: 2rem;
+}
+
+.box3 .nested_box4 {
+    background-color: aliceblue;
+    border-radius: 2rem;
+    box-shadow: 0px 3px 3px gray;
+    padding: 2rem;
+}
+
+.box3 .nested_box5 {
+    background-color: aliceblue;
+    border-radius: 2rem;
+    box-shadow: 0px 3px 3px gray;
+    padding: 2rem;
+}
+
+.box3 .nested_box6 {
+    background-color: rgb(197, 49, 93);
+    border-radius: 2rem;
+    box-shadow: 0px 3px 3px gray;
+    padding: 2rem;
+}
+.hv:hover{
+   transform: scale(103%);
+   transition: 0.3s;
+   box-shadow: 4px 8px 8px gray;
+}
+#nested_box_id_2{
+   color: white;
+}
+.box3 a{
+    text-decoration: none;
+    font-size: large;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(44, 196, 14, 0.63);
+    box-shadow: 1px 3px 8px rgb(177, 16, 164);
+}
+
+.container .box4 {
+    background-color: rgb(3, 41, 73);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.box4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    padding: 2rem;
+    color: white;
+}
+#categories_list a{
+    text-decoration: none;
+}
