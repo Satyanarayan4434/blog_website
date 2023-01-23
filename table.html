@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            ;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .warpper {
+            height: 100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .content {
+            height: 700px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 5rem 1fr 1fr;
+            grid-template-areas: "hd hd"
+                "side cnt"
+                " ft aside";
+            gap: 5px;
+        }
+
+        #header {
+            grid-area: hd;
+            background-color: blueviolet;
+        }
+
+        #sidebar {
+            grid-area: side;
+            background-color: maroon;
+        }
+
+        #content {
+            grid-area: cnt;
+            background-color: magenta;
+        }
+
+        #aside {
+            grid-area: aside;
+            background-color: rgb(219, 15, 15);
+        }
+
+        #footer {
+            grid-area: ft;
+            background-color: rgb(85, 248, 10);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warpper">
+        <div class="content">
+            <div id="header">Header</div>
+            <div id="sidebar">Sidebar</div>
+            <div id="content">Content</div>
+            <div id="aside">aside</div>
+            <div id="footer">Footer</div>
+        </div>
+    </div>
+</body>
+
+</html>
